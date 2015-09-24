@@ -29,3 +29,6 @@ You can cancel the script exection at any time using **Ctrl + c**.
 
 Because the regular way of downloading albums don't always work. Read more [here]( https://www.flickr.com/help/forum/en-us/72157654124474892/).
 
+> I don't see a license anywhere. You must decide on a license!
+
+You can do whatever you like with this script. But I cannot be held responsible for whatever it is you do. Having that said, it would be nice of you to contribute back if you make any improvements to this script.
