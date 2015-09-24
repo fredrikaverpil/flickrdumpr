@@ -11,3 +11,9 @@ Downloads all of your flickr albums (original photo/video files). Requires Pytho
 Run the python script:
 
     python flickr-dumpr.py
+
+### Known issues and limitations
+
+* There is currently no way of retrieving the original file extension for videos. Therefore I append ".mov" to all video files, regardless of which extension the should really have.
+* You cannot cherry-pick albums to download. This script downloads all albums associated with your Flickr account. However, it will skip existing images which have already been downloaded.
+* You will end up with duplicates if you have assigned the same image to more than one album. That image will download into each album folder.
