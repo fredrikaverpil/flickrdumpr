@@ -18,3 +18,4 @@ Run the python script:
 * You cannot cherry-pick albums to download. This script downloads all albums associated with your Flickr account. However, it will skip existing images which have already been downloaded.
 * You will end up with duplicate files if you have assigned the same photo/video to more than one album. That same file will download into each album folder.
 * No log file is being created.
+* If you don't have any albums, you need to go into Flickr's [organizr](https://www.flickr.com/photos/organize) and put all of your photos into an album.
