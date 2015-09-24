@@ -23,3 +23,6 @@ You can cancel the script exection at any time using **Ctrl + c**.
 * No log file is being created.
 * If you don't have any albums, you need to go into Flickr's [organizr](https://www.flickr.com/photos/organize) and put all of your photos into an album.
 
+### Why did you make this?
+
+Because the regular way of downloading albums don't always work. Read more [here]( https://www.flickr.com/help/forum/en-us/72157654124474892/).
