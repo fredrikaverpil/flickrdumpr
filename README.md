@@ -12,7 +12,7 @@ Run the python script:
 
     python flickr-dumpr.py
 
-The first time you run the script, a web browser window should open and you will be prompted to authorize the flickr-dumpr script to get read-only access to your flickr account.
+The first time you run the script, a web browser window should open and you will be prompted to authorize the flickr-dumpr script to get read-only access to your Flickr account.
 
 You can cancel the script exection at any time using **Ctrl + c**.
 
