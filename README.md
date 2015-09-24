@@ -14,6 +14,6 @@ Run the python script:
 
 ### Known issues and limitations
 
-* There is currently no way of retrieving the original file extension for videos. Therefore I append ".mov" to all video files, regardless of which extension the should really have.
+* There is currently no way of retrieving the original file extension for videos. AFAIK this is a [limitation in the API](https://www.flickr.com/groups/51035612836@N01/discuss/72157621698855558/). Therefore, ".mov" is being appended to all video file names, regardless of which extension the should really have.
 * You cannot cherry-pick albums to download. This script downloads all albums associated with your Flickr account. However, it will skip existing images which have already been downloaded.
-* You will end up with duplicates if you have assigned the same image to more than one album. That image will download into each album folder.
+* You will end up with duplicate files if you have assigned the same photo/video to more than one album. That same file will download into each album folder.
