@@ -39,6 +39,10 @@ There's always a risk. However, each photo/video is downloaded as a temp file. N
 
 Each download is retried indefinitely until it is completely downloaded. If a download seems to never finish, you can cancel the operation (**Ctrl + c**) and re-run the script. I am going to implement a log file which will show you all warnings during the script operation, such as if the script is unable to successfully fetch the download URL for a photo/video (a very rare case, and usually stems from an error on Flickr's side).
 
+> One of my photos says "This photo is no longer available". What's going on?
+
+I've noticed this on very rare occasions too. Have a look in the Flickr help forums: https://www.flickr.com/help/forum/en-us/72157649823558847/
+
 > I don't see a license anywhere. You must decide on a license!
 
 You can do whatever you like with this script. But I cannot be held responsible for whatever it is you do. Having that said, it would be nice of you to contribute back if you make any improvements to this script.
