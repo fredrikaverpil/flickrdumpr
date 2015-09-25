@@ -41,7 +41,7 @@ Each download is retried indefinitely until it is completely downloaded. If a do
 
 > One of my downloaded photos says "This photo is no longer available". What's going on?
 
-I've noticed this on very rare occasions too. Have a look in the Flickr help forums: https://www.flickr.com/help/forum/en-us/72157649823558847/
+I've noticed this on very rare occasions too. Unfortunately, the photo is probably gone forever (not my fault!), and for some reason deleted from the Flickr servers. Have a look in the Flickr help forums: https://www.flickr.com/help/forum/en-us/72157649823558847/
 
 > I don't see a license anywhere. You must decide on a license!
 
