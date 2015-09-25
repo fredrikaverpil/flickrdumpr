@@ -19,7 +19,7 @@ You can cancel the script exection at any time using **Ctrl + c**.
 
 ### Known issues and limitations
 
-* There is currently no way of retrieving the original file extension for videos. AFAIK this is a [limitation in the API](https://www.flickr.com/groups/51035612836@N01/discuss/72157621698855558/). Therefore, ".mov" is being appended to all video file names, regardless of which extension the should really have.
+* There is currently no way of retrieving the original file extension for videos. AFAIK this is a [limitation in the API](https://www.flickr.com/groups/51035612836@N01/discuss/72157621698855558/). Therefore, ".mov" is being appended to all video filenames, regardless of which extension the should really have.
 * You cannot cherry-pick albums to download. This script downloads all albums associated with your Flickr account. However, it will skip existing photos and videos which have already been downloaded.
 * You will end up with duplicate files if you have assigned the same photo/video to more than one album. That same file will download into each album folder.
 * No log file is being created.
@@ -30,6 +30,14 @@ You can cancel the script exection at any time using **Ctrl + c**.
 > Why did you make this?
 
 Because the regular way of downloading albums don't always work. Read more [here]( https://www.flickr.com/help/forum/en-us/72157654124474892/).
+
+> Can I end up with incompleted downloads?
+
+There's always a risk. However, each photo/video is downloaded as a temp file. Not until it is completely downloaded it is renamed into the actual filename on disk. So at least in theory, if you cancel the script operation and re-run it, you should not have to worry about incompleted downloads.
+
+> How do I keep track of any failed downloads?
+
+Each download is retried indefinitely until it is completely downloaded. If a download seems to never finish, you can cancel the operation (**Ctrl + b**) and re-run the script. I am going to implement a log file which will show you all warnings during the script operation, such as if the script is unable to successfully fetch the download URL for a photo/video.
 
 > I don't see a license anywhere. You must decide on a license!
 
