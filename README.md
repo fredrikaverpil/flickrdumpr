@@ -47,7 +47,7 @@ I've noticed this on very rare occasions too. Unfortunately, the photo is probab
 
 You can do whatever you like with this script. But I cannot be held responsible for whatever it is you do. Having that said, it would be nice of you to contribute back if you make any improvements to this script.
 
-### Roadmap
+### Roadmap/wishlist
 
 * Whenever Flickr offers the possibility to fetch the video file extension, it will be implemented.
 * Log file.
