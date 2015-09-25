@@ -54,3 +54,4 @@ You can do whatever you like with this script. But I cannot be held responsible 
 * Possibility to download only a selection of albums.
 * Possibility to save the album index down to file and skip the album indexing part by reading this file.
 * Simple TkInter-based UI.
+* Bundle flickrapi virtualenvs for Win/OSX/Linux and have the script auto-detect which one to use.
