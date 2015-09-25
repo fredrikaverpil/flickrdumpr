@@ -46,3 +46,11 @@ I've noticed this on very rare occasions too. Unfortunately, the photo is probab
 > I don't see a license anywhere. You must decide on a license!
 
 You can do whatever you like with this script. But I cannot be held responsible for whatever it is you do. Having that said, it would be nice of you to contribute back if you make any improvements to this script.
+
+### Roadmap
+
+* Whenever Flickr offers the possibility to fetch the video file extension, it will be implemented.
+* Log file.
+* Possibility to download only a selection of albums.
+* Possibility to save the album index down to file and skip the album indexing part by reading this file.
+
