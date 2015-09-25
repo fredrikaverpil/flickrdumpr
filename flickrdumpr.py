@@ -136,6 +136,8 @@ class FlickrDumpr(object):
             
 
             while ( len(items) == 500 or page == 1 ):
+                items = [] # RESET
+                
                 response_string = self.flickrapi_json.photosets.getPhotos(photoset_id=album_id, user_id=USER_ID, extras='original_format, url_o, media', page=str(page) )
                 json_data = json.loads( response_string )   
                 
