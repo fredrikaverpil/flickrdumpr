@@ -1,4 +1,4 @@
-# flickr-dumpr
+# flickrdumpr
 Downloads all of your flickr albums (original photo/video files). Requires Python 2.7 with the [flickrapi](https://pypi.python.org/pypi/flickrapi) module.
 
 ### Usage instructions
@@ -10,11 +10,19 @@ Downloads all of your flickr albums (original photo/video files). Requires Pytho
 
 Run the python script:
 
+<<<<<<< Updated upstream
     python flickr-dumpr.py
 
 The first time you run the script, a web browser window should open and you will be prompted to authorize the flickr-dumpr script to get read-only access to your Flickr account.
 
 You can cancel the script exection at any time using **Ctrl + c**.
+=======
+    python flickrdumpr.py
+
+The first time you run the script, a web browser window should open and you will be prompted to authorize the flickrdumpr script to get read-only access to your Flickr account.
+
+You can cancel the script exection at any time by holding down **Ctrl + c**.
+>>>>>>> Stashed changes
 
 
 ### Known issues and limitations
@@ -22,7 +30,10 @@ You can cancel the script exection at any time using **Ctrl + c**.
 * There is currently no way of retrieving the original file extension for videos. AFAIK this is a [limitation in the API](https://www.flickr.com/groups/51035612836@N01/discuss/72157621698855558/). Therefore, ".mov" is being appended to all video filenames, regardless of which extension the should really have.
 * You cannot cherry-pick albums to download. This script downloads all albums associated with your Flickr account. However, it will skip existing photos and videos which have already been downloaded.
 * You will end up with duplicate files if you have assigned the same photo/video to more than one album. That same file will download into each album folder.
+<<<<<<< Updated upstream
 * No log file is being created.
+=======
+>>>>>>> Stashed changes
 * If you don't have any albums, you need to go into Flickr's [organizr](https://www.flickr.com/photos/organize) and put all of your photos into an album.
 
 ### FAQ
@@ -37,7 +48,11 @@ There's always a risk. However, each photo/video is downloaded as a temp file. N
 
 > So how do I keep track of any incompleted/failed downloads?
 
+<<<<<<< Updated upstream
 Each download is retried indefinitely until it is completely downloaded. If a download seems to never finish, you can cancel the operation (**Ctrl + c**) and re-run the script. I am going to implement a log file which will show you all warnings during the script operation, such as if the script is unable to successfully fetch the download URL for a photo/video (a very rare case, and usually stems from an error on Flickr's side).
+=======
+Each download is retried indefinitely until it is completely downloaded. If a download seems to never finish, you can cancel the operation (hold down **Ctrl + c**) and re-run the script. A log file is created which contains any warnings and errors during the script operation, such as if the script is unable to successfully fetch the download URL for a photo/video (a very rare case, and usually stems from an error on Flickr's side).
+>>>>>>> Stashed changes
 
 > One of my downloaded photos says "This photo is no longer available". What's going on?
 
@@ -49,8 +64,13 @@ You can do whatever you like with this script. But I cannot be held responsible 
 
 ### Roadmap/wishlist
 
+<<<<<<< Updated upstream
 * Whenever Flickr offers the possibility to fetch the video file extension, it will be implemented.
 * Log file.
+=======
+* ~~Log file.~~ *– implemented*
+* Whenever Flickr offers the possibility to fetch the video file extension, it will be implemented.
+>>>>>>> Stashed changes
 * Possibility to download only a selection of albums.
 * Possibility to save the album index down to file and skip the album indexing part by reading this file.
 * Simple TkInter-based UI.
