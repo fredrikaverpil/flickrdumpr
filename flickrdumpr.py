@@ -249,7 +249,7 @@ class FlickrDumpr(object):
                 media_count += 1
             album_count +=1
 
-        logger_msg = '\n\nAll downloads completed!\nSummary:\nSuccessful photo/video downloads: ' + str(successful_downloads) + '\nSkipped photo/video downloads: ' + str(skipped) + '\nNumber of retries: ' + str(retries) + '\nCheck log file for additional warnings and errors: ' + LOG_FILEPATH
+        logger_msg = 'All downloads completed!\nSummary:\nSuccessful photo/video downloads: ' + str(successful_downloads) + '\nSkipped photo/video downloads: ' + str(skipped) + '\nNumber of retries: ' + str(retries) + '\nCheck log file for additional warnings and errors: ' + LOG_FILEPATH
         self.logger.info( logger_msg )
 
 
