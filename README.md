@@ -53,4 +53,4 @@ You can do whatever you like with this script. But I cannot be held responsible 
 * Log file.
 * Possibility to download only a selection of albums.
 * Possibility to save the album index down to file and skip the album indexing part by reading this file.
-
+* Simple TkInter-based UI.
