@@ -35,7 +35,7 @@ Because the regular way of downloading albums don't always work. Read more [here
 
 There's always a risk. However, each photo/video is downloaded as a temp file. Not until it is completely downloaded it is renamed into the actual filename on disk. So at least in theory, if you cancel the script operation and re-run it, you should not have to worry about incompleted downloads. I've downloaded tens of thousands of photos/videos using this script and it has never produced incompleted files for me (fingers crossed).
 
-> How do I keep track of any failed downloads?
+> So how do I keep track of any incompleted/failed downloads?
 
 Each download is retried indefinitely until it is completely downloaded. If a download seems to never finish, you can cancel the operation (**Ctrl + c**) and re-run the script. I am going to implement a log file which will show you all warnings during the script operation, such as if the script is unable to successfully fetch the download URL for a photo/video (a very rare case, and usually stems from an error on Flickr's side).
 
