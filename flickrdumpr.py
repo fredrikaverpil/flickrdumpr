@@ -11,20 +11,21 @@ DISABLE_EXISTING_LOGGERS = True # disables loggers from e.g. the Flickr API
 # Flickr API
 API_KEY = u'9ef13e2a43de8882ff30fa662a9e98f8'
 API_SECRET = u'0f22b5777e4eb262'
-FLICKR_API_FOUND = None
+API_FOUND = None
+API_PER_PAGE = 500
 
 
 
 try:
     import flickrapi
-    FLICKR_API_FOUND = True
+    API_FOUND = True
 except ImportError:
-    FLICKR_API_FOUND = False
+    API_FOUND = False
 
 def check_requirements():
     ''' Makes sure that we have access to the flickr API and will abort the
     script if we can't find it '''
-    if not FLICKR_API_FOUND:
+    if not API_FOUND:
         print '''Error: Flickr API not installed/available.
         More info at: https://pypi.python.org/pypi/flickrapi'''
         # More info:
@@ -99,7 +100,7 @@ class FlickrDumpr(object):
     def get_albums(self):
         ''' Creates an albums dictionary '''
         self.logger.info('Retrieving album list...')
-        response_string = self.flickrapi_json.photosets.getList(user_id=USER_ID, extras='original_format,url_o')
+        response_string = self.flickrapi_json.photosets.getList(user_id=USER_ID, extras='original_format,url_o', per_page=str(API_PER_PAGE))
         json_data = json.loads( response_string )
         albums = {}
         for album in json_data['photosets']['photoset']:
@@ -135,9 +136,9 @@ class FlickrDumpr(object):
             self.logger.info( logger_msg )
             
 
-            while ( len(items) == 500 or page == 1 ):
+            while ( len(items) == API_PER_PAGE or page == 1 ):
                 items = [] # RESET
-                
+
                 response_string = self.flickrapi_json.photosets.getPhotos(photoset_id=album_id, user_id=USER_ID, extras='original_format, url_o, media', page=str(page) )
                 json_data = json.loads( response_string )   
                 
